@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto: Bellicenter</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bellicenter.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
+
+</head>
+<body>
+  <header class="hero">
+    <h1>BELLICENTER</h1>
+    <p class="tagline">Centro integral de belleza con identidad digital</p>
+  </header>
+
+  <section class="intro">
+    <h2>Estrategia Digital</h2>
+    <p>
+      Impulsé la presencia de Bellicenter en redes sociales, creando anuncios llamativos, 
+      contenido de humor y mostrando transformaciones de clientes.  
+      Hoy en día, sus redes sociales son el motor de nuevos clientes cada mes.
+    </p>
+  </section>
+
+  <section class="media-grid">
+    <div class="media-item large">
+      <img src="{{ url_for('static', filename='img/20_OFF.png') }}" alt="Diseño de pauta publicitaria">
+      <p class="caption">Pauta publicitaria diseñada para atraer clientes nuevos cada mes.</p>
+    </div>
+
+    <div class="media-item large">
+      <img src="{{ url_for('static', filename='img/pauta.jpg') }}" alt="Resultados de la campaña">
+      <p class="caption">Resultados de la campaña: logramos un total de 3 citas agendadas.</p>
+    </div>
+
+    <div class="media-item large">
+      <img src="{{ url_for('static', filename='img/prom_pauta.png') }}" alt="Promedio de pauta">
+      <p class="caption">Promedio de pauta mensual para la campaña.</p>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <h2>Videos Dinámicos</h2>
+    <div class="video-item">
+      <video controls>
+        <source src="{{ url_for('static', filename='videos/1.mp4') }}" type="video/mp4">
+      </video>
+      <p class="caption">Este video tuvo un gran alcance en redes sociales.</p>
+    </div>
+    <div class="video-item">
+      <video controls>
+        <source src="{{ url_for('static', filename='videos/2.mp4') }}" type="video/mp4">
+      </video>
+      <p class="caption">Contenido que destaca la creatividad de Bellicenter.</p>
+    </div>
+
+  </section>
+
+  <section class="highlight">
+    <h2>Resultados</h2>
+    <ul>
+      <li>+ Nuevos clientes cada mes</li>
+      <li>+ Interacción en redes sociales</li>
+      <li>+ Reconocimiento de marca</li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="{{ url_for('index') }}" class="back">⬅ Volver al portafolio</a>
+  </footer>
+</body>
+</html>

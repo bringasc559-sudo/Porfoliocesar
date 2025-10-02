@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio Futurista - After Effects</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/effects.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
+
+</head>
+<body>
+    <!-- Fondo de partículas -->
+    <canvas id="background"></canvas>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Hero -->
+        <header class="hero fade-in gradient-text">
+            <h1>After Effects</h1>
+            <p class="tagline">Animación & Motion Graphics profesional</p>
+        </header>
+
+        <!-- Introducción -->
+        <section class="intro fade-in delay-1">
+            <h2>Mi experiencia en animación</h2>
+            <p>
+                Diseñé animaciones utilizando <strong>After Effects</strong>, 
+                creando motion graphics y efectos visuales que destacan los productos y mejoran la experiencia visual del usuario.
+            </p>
+
+        </section>
+
+        <!-- Sección de video -->
+        <section class="media-grid fade-in delay-2">
+            <div class="media-item">
+                <video controls>
+                    <source src="{{ url_for('static', filename='videos/neyy.mov') }}" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+                <p class="caption">Demostración de animación y motion graphics en After Effects</p>
+            </div>
+        </section>
+
+        <!-- Resultados / Highlight -->
+        <section class="highlight fade-in delay-3">
+            <h2>Resultados</h2>
+            <ul>
+                <li>+ Experiencia visual</li>
+                <li>+ Animaciones atractivas que destacan productos</li>
+                <li>+ Conocimiento en Motion Graphics</li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <a href="{{ url_for('index') }}" class="back">⬅ Volver al portafolio</a>
+        </footer>
+    </div>
+
+    <!-- Esquinas estilo Virgil Abloh -->
+    <div class="corner-info top-left">Diseño</div>
+    <div class="corner-info top-right">CDMX</div>
+    <div class="corner-info bottom-left">Portafolio 2025</div>
+    <div class="corner-info bottom-right">Cesar Emiliano</div>
+
+    <!-- Script de partículas -->
+    <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
+</body>
+</html>
