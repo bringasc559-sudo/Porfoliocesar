@@ -1,187 +1,70 @@
-/* Reset y cuerpo */
-body {
+/* General */
+body, html {
+    scroll-behavior: smooth;
     margin: 0;
-    font-family: 'Roboto Mono', monospace;
-    background: #0a0a0a;
-    color: #fff;
-    line-height: 1.6;
-    overflow-x: hidden;
+    padding: 0;
 }
 
-/* Contenedor principal */
 .container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 50px 20px;
-    text-align: center;
+    margin-top: 20px; /* scroll inicial más arriba */
 }
 
 /* Hero */
 .hero {
-    padding: 4rem 2rem;
+    text-align: center;
+    margin-bottom: 40px;
 }
-.hero h1 {
-    font-size: 4rem;
-    font-weight: 900;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    background: linear-gradient(90deg, #25D366, #00ff88, #aaffaa);
+
+.gradient-text {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent;
-    text-shadow: 0 0 8px rgba(0,255,136,0.7);
-    animation: floatUpDown 3s ease-in-out infinite;
-}
-.hero .tagline {
-    font-size: 1.2rem;
-    opacity: 0.8;
-    margin-top: 0.5rem;
 }
 
-/* Animación Hero flotante */
-@keyframes floatUpDown {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-}
-
-/* Introducción */
-.intro {
-    max-width: 900px;
-    margin: 3rem auto;
-    padding: 0 2rem;
-}
-.intro h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-.intro p {
-    font-size: 1.1rem;
-}
-.skill-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: rgba(0,0,0,0.3);
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 15px #00ff88;
-    margin-top: 1rem;
-    font-weight: bold;
-    color: #00ff88;
-}
-.skill-badge img {
-    width: 24px;
-    height: 24px;
-}
-
-/* Media Grid (solo video) */
+/* Media Grid */
 .media-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
 }
+
 .media-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-    background: #1a1a1a;
-    box-shadow: 0 0 20px rgba(0,255,136,0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+    width: 80%;
 }
-.media-item:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 30px #00ff88, 0 0 60px #00ff88;
-}
+
 .media-item video {
+    max-height: 500px;
     width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 0 20px #00ff88, 0 0 50px #00ff88;
-    transition: transform 0.3s, box-shadow 0.3s;
+    display: block;
 }
-.media-item video:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 35px #00ff88, 0 0 70px #00ff88;
-}
+
 .caption {
-    padding: 0.5rem;
-    font-size: 1rem;
-    color: #ccc;
     text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
 }
 
-/* Highlight / Resultados */
+/* Highlight section */
 .highlight {
-    text-align: center;
-    padding: 3rem 2rem;
-    background: linear-gradient(135deg, #111, #0c0c0c);
+    margin-top: 50px;
+    padding: 20px;
 }
-.highlight h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
+
 .highlight ul {
-    display: inline-block;
-    background: rgba(0,0,0,0.3);
-    backdrop-filter: blur(8px);
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(0,255,136,0.5);
-    list-style: none;
-}
-.highlight li {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-    font-weight: bold;
-    text-shadow: 0 0 6px rgba(0,255,136,0.3);
+    list-style: disc;
+    padding-left: 20px;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 2rem;
-}
-footer .back {
-    text-decoration: none;
-    color: #00ffaa;
-    font-weight: bold;
-    border: 2px solid #00ffaa;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    box-shadow: 0 0 10px #00ffaa, 0 0 30px #00ffaa;
-}
-footer .back:hover {
-    background: #00ffaa;
-    color: #0a0a0a;
-    transform: scale(1.05);
-    box-shadow: 0 0 25px #00ffaa, 0 0 50px #00ffaa;
-}
-
-/* Corner info estilo Virgil Abloh */
+/* Corner info */
 .corner-info {
     position: fixed;
-    z-index: 20;
-    color: #25D366;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    opacity: 0.85;
-    transition: all 0.3s ease;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #333;
 }
-.corner-info:hover {
-    text-shadow: 0 0 10px #00ff88, 0 0 25px #00ff88;
-}
-.top-left { top: 20px; left: 20px; }
-.top-right { top: 20px; right: 20px; }
-.bottom-left { bottom: 20px; left: 20px; }
-.bottom-right { bottom: 20px; right: 20px; }
 
-/* Animaciones fade-in */
-.fade-in { opacity: 0; transform: translateY(20px); animation: fadeInUp 1s forwards; }
-.fade-in.delay-1 { animation-delay: 0.5s; }
-.fade-in.delay-2 { animation-delay: 1s; }
-.fade-in.delay-3 { animation-delay: 1.5s; }
-
-@keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+.top-left { top: 10px; left: 10px; }
+.top-right { top: 10px; right: 10px; }
+.bottom-left { bottom: 10px; left: 10px; }
+.bottom-right { bottom: 10px; right: 10px; }
