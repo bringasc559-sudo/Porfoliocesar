@@ -1,25 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Portafolio - After Effects</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/effects.css">
     <link rel="stylesheet" href="css/portfolio.css">
+    <!-- JS de partículas -->
     <script src="js/particles.js" defer></script>
-    <style>
-        /* Ajuste para que el scroll inicial esté más arriba */
-        body, html {
-            scroll-behavior: smooth;
-        }
-        .container {
-            margin-top: 30px; /* ajusta este valor según necesites */
-        }
-        /* Opcional: limitar altura del video para que no empuje demasiado */
-        .media-item video {
-            max-height: 500px; 
-            width: 100%;
-        }
-    </style>
 </head>
 <body>
     <canvas id="background"></canvas>
@@ -40,7 +28,7 @@
 
         <section class="media-grid">
             <div class="media-item">
-                <video controls>
+                <video autoplay muted loop playsinline>
                     <source src="static/videos/neyy.mp4" type="video/mp4">
                     Tu navegador no soporta la reproducción de videos.
                 </video>
@@ -68,4 +56,3 @@
     <div class="corner-info bottom-right">Cesar Emiliano</div>
 </body>
 </html>
-
