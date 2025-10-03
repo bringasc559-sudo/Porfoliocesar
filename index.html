@@ -2,51 +2,68 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Portafolio - Cesar</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/effects.css">
+    <title>Proyecto Bellicenter</title>
+    <link rel="stylesheet" href="css/bellicenter.css">
+    <link rel="stylesheet" href="css/portafolio.css">
+    <script src="js/particles.js"></script>
 </head>
 <body>
-    <!-- Fondo de partículas -->
-    <canvas id="background"></canvas>
-
-    <!-- Contenedor principal -->
     <div class="container">
-        <h1 class="fade-in gradient-text">¡Hola! Soy Cesar</h1>
-        <p class="fade-in intro-text">Bienvenido a mi portafolio.</p>
+        <header class="hero fade-in gradient-text">
+            <h1>BELLICENTER</h1>
+            <p class="tagline">Proyecto de animación y diseño web</p>
+        </header>
 
-        <!-- Botón de WhatsApp futurista -->
-        <a class="pulse fade-in delay-2 whatsapp-button"
-           href="https://wa.me/52155XXXXXXXXX?text=Hola%20Cesar,%20me%20interesa%20tu%20portafolio"
-           target="_blank">
-            💬 Escríbeme en WhatsApp
-        </a>
+        <section class="intro fade-in">
+            <h2>Proyecto Bellicenter</h2>
+            <p>
+                Este proyecto muestra cómo implementé animaciones y diseño web para Bellicenter, 
+                combinando estética y funcionalidad para mejorar la experiencia del usuario.
+            </p>
+        </section>
 
-        <!-- Sección Proyectos -->
-        <section class="fade-in delay-3">
-            <h2>Proyectos</h2>
+        <section class="media-grid">
+            <div class="media-item large">
+                <img src="static/img/pauta.jpg" alt="Pauta">
+                <p class="caption">Pauta del proyecto.</p>
+
+                <img src="static/img/prom_pauta.png" alt="Promoción Pauta">
+                <p class="caption">Promoción Pauta.</p>
+
+                <video controls>
+                    <source src="static/videos/1.mp4" type="video/mp4">
+                </video>
+                <p class="caption">Video 1.</p>
+
+                <video controls>
+                    <source src="static/videos/2.mp4" type="video/mp4">
+                </video>
+                <p class="caption">Video 2.</p>
+
+                <video controls>
+                    <source src="static/videos/3.mp4" type="video/mp4">
+                </video>
+                <p class="caption">Video 3.</p>
+
+                <video controls>
+                    <source src="static/videos/4.mov" type="video/mp4">
+                </video>
+                <p class="caption">Video 4.</p>
+            </div>
+        </section>
+
+        <section class="highlight fade-in">
+            <h2>Resultados</h2>
             <ul>
-                <li><a href="proyecto_bellicenter.html">Proyecto 1: Bellicenter</a></li>
-                <li><a href="eff.html">Proyecto 2: After Effects</a></li>
-                <li><a href="barberia.html">Proyecto 3: Barbería</a></li>
+                <li>Animaciones fluidas y responsivas</li>
+                <li>Interfaz clara y atractiva</li>
+                <li>Mejora de la experiencia del usuario</li>
             </ul>
         </section>
 
-        <!-- Sección Sobre mí -->
-        <section class="fade-in delay-4">
-            <h2>Sobre mí</h2>
-            <p>Estudio mercadotecnia, desarrollo páginas web, edito videos y creo música. Estoy construyendo mi portafolio personal, siempre buscando crecer y aprender nuevas habilidades.</p>
-        </section>
+        <footer>
+            <a href="index.html" class="back">⬅ Volver al portafolio</a>
+        </footer>
     </div>
-
-    <!-- Esquinas estilo Virgil Abloh -->
-    <div class="corner-info top-left">Diseño</div>
-    <div class="corner-info top-right">CDMX</div>
-    <div class="corner-info bottom-left">Portafolio 2025</div>
-    <div class="corner-info bottom-right">Cesar Emiliano</div>
-
-    <!-- Script de partículas -->
-    <script src="js/particles.js"></script>
 </body>
 </html>
-
