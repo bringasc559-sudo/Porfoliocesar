@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Proyecto Barbería</title>
     <!-- Conectar CSS específico -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/barberia.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
-
+    <link rel="stylesheet" href="css/barberia.css">
+    <link rel="stylesheet" href="css/portafolio.css">
+    <script src="js/particles.js"></script>
 </head>
 <body>
     <div class="container">
@@ -28,18 +28,14 @@
         <!-- Media Grid -->
         <section class="media-grid fade-in delay-2">
             <div class="media-item large">
-
-                 <img src="{{ url_for('static', filename='img/portada.png') }}" 
-                     alt="Microperforado Barbería">
+                <img src="img/portada.png" alt="Microperforado Barbería">
                 <p class="caption">Diseño aplicado en la entrada de la barbería.</p>
-                <img src="{{ url_for('static', filename='img/pruebas_finales.png') }}" 
-                     alt="Microperforado Barbería">
+                <img src="img/pruebas_finales.png" alt="Microperforado Barbería">
                 <p class="caption">Prueba de diseño.</p>
             </div>
            
             <div class="media-item large">
-                <img src="{{ url_for('static', filename='img/Microperforado_barber.jpeg') }}" 
-                     alt="Microperforado Barbería">
+                <img src="img/Microperforado_barber.jpeg" alt="Microperforado Barbería">
                 <p class="caption">Diseño final aplicado en la entrada de la barbería.</p>
             </div>
         </section>
@@ -49,14 +45,13 @@
             <h2>Resultados</h2>
             <ul>
                 <li>Demostración de adaptación de diseño digital a físico</li>
-                
                 <li>Impacto visual real para el cliente</li>
             </ul>
         </section>
 
         <!-- Footer -->
         <footer>
-            <a href="{{ url_for('index') }}" class="back">⬅ Volver al portafolio</a>
+            <a href="index.html" class="back">⬅ Volver al portafolio</a>
         </footer>
     </div>
 </body>
