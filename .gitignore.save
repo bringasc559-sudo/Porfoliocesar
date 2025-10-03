@@ -1,0 +1,17 @@
+# Ignorar archivos de macOS
+.DS_Store
+*.icloud
+.DS_Store
+
+git add proyecto_bellicenter.html
+git add static/img/Microperforado_barber.jpeg
+git add static/img/perforado_final_44.png
+git add static/img/portada.png
+git add static/img/prom_pauta.png
+git add static/img/pruebas_finales.png
+git commit -m "Actualizar proyecto Bellicenter y subir imágenes nuevas"
+git push origin main
+
+
+
+
