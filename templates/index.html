@@ -2,11 +2,9 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Portafolio Futurista - Cesar</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/portfolio.css') }}">
-
+    <title>Portafolio - Cesar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
     <!-- Fondo de partículas -->
@@ -28,17 +26,16 @@
         <section class="fade-in delay-3">
             <h2>Proyectos</h2>
             <ul>
-                <li><a href="{{ url_for('proyecto_bellicenter') }}">Proyecto 1: Bellicenter</a></li>
-                <li><a href="{{ url_for('after_effects') }}">Proyecto 2: After Effects</a></li>
-
-                <li><a href="{{ url_for('proyecto_barberia') }}">Proyecto 3: Barberia</a></li>
+                <li><a href="proyectos/bellicenter.html">Proyecto 1: Bellicenter</a></li>
+                <li><a href="proyectos/after_effects.html">Proyecto 2: After Effects</a></li>
+                <li><a href="proyectos/barberia.html">Proyecto 3: Barbería</a></li>
             </ul>
         </section>
 
         <!-- Sección Sobre mí -->
         <section class="fade-in delay-4">
             <h2>Sobre mí</h2>
-            <p>Estudio mercadotecnia, desarrollo páginas web, edito videos y creo música. Estoy construyendo mi portafolio personal, siempre buscando crecer y aprender nuevas habilidades</p>
+            <p>Estudio mercadotecnia, desarrollo páginas web, edito videos y creo música. Estoy construyendo mi portafolio personal, siempre buscando crecer y aprender nuevas habilidades.</p>
         </section>
     </div>
 
@@ -49,6 +46,6 @@
     <div class="corner-info bottom-right">Cesar Emiliano</div>
 
     <!-- Script de partículas -->
-    <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
+    <script src="js/particles.js"></script>
 </body>
 </html>
