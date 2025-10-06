@@ -267,6 +267,58 @@ a {
     100% { box-shadow: 0 0 10px #00ff88; }
 }
 
+/* Sección de Certificados */
+.certificados-section {
+    padding: 30px 20px;
+    margin: 40px 0;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+    text-align: center;
+}
+
+/* Botón futurista verde */
+.button-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 28px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #0a0a0a;
+    background: linear-gradient(90deg, #00ff88, #00ffaa);
+    border-radius: 50px;
+    box-shadow: 0 0 10px #00ff88, 0 0 25px #00ffaa50;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Brillo animado */
+.button-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: all 0.6s ease;
+}
+
+.button-link:hover::before {
+    left: 100%;
+}
+
+/* Hover futurista */
+.button-link:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px #00ff88, 0 0 50px #00ffaa80;
+}
+
 
 
 
