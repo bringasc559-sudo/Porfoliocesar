@@ -167,3 +167,97 @@ ul li a { text-decoration: none; color: inherit; display: block; }
     box-shadow: 0 0 10px rgba(255, 65, 108, 0.5);
 }
 
+/* ======== BOTONES ESTILO FUTURISTA ======== */
+
+/* Botón general */
+a {
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  transition: all 0.3s ease;
+}
+
+/* Botón de WhatsApp futurista */
+.whatsapp-button {
+  display: inline-block;
+  padding: 14px 30px;
+  margin-top: 20px;
+  color: #fff;
+  background: linear-gradient(90deg, #00ff88, #00b3ff);
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px #00ffcc, 0 0 25px #00ffcc80;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.whatsapp-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: all 0.6s ease;
+}
+
+.whatsapp-button:hover::before {
+  left: 100%;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffd0, 0 0 40px #00ffd080;
+}
+
+/* ======== BOTONES DE PROYECTOS ======== */
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  margin: 12px 0;
+}
+
+section ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #ffffff40;
+  border-radius: 12px;
+  color: #ffffffcc;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+section ul li a:hover {
+  color: #fff;
+  background: linear-gradient(90deg, #00ffc6, #007bff);
+  box-shadow: 0 0 15px #00ffc680, 0 0 30px #007bff50;
+  transform: translateY(-3px);
+  border-color: transparent;
+}
+
+/* ======== ANIMACIÓN DE PULSO (para el botón principal) ======== */
+.pulse {
+  animation: pulse 2.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 204, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(0, 255, 204, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 255, 204, 0);
+  }
+}
